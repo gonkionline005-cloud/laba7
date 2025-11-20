@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7: jQuery vs Vanilla JS</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+
+    <h1>jQuery vs Vanilla JS Comparison</h1>
+
+    <hr>
+
+    <section id="task-a">
+        <h2>Task A: Content Switcher (Tabs)</h2>
+        <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="tab-1">About Us</button>
+            <button class="tab-btn" data-tab="tab-2">Services</button>
+            <button class="tab-btn" data-tab="tab-3">Contact</button>
+        </div>
+
+        <div class="tabs-container">
+            <div id="tab-1" class="tab-content active">
+                <h3>About Us Content</h3>
+                <p>This is the first tab content. jQuery and Vanilla JS are used to switch between these blocks.</p>
+            </div>
+
+            <div id="tab-2" class="tab-content">
+                <h3>Services Content</h3>
+                <p>This is the second tab content. We demonstrate class toggling here.</p>
+            </div>
+
+            <div id="tab-3" class="tab-content">
+                <h3>Contact Content</h3>
+                <p>This is the third tab content. Manipulation of the DOM with different syntaxes.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    
+    <section id="reviews-section">
+        <h2>Task C: AJAX Request (Vanilla JS/Fetch)</h2>
+        <div id="reviews" class="review-box">Loading...</div>
+        <button id="newReviewsBtn" class="btn wide">Update Quote</button>
+    </section>
+
+    <hr>
+
+    <section id="task-d" style="min-height: 250px;">
+        <h2>Task D: jQuery UI (Drag & Drop, Datepicker)</h2>
+        <div id="draggable">
+            Drag Me
+        </div>
+        
+        <p>Select Date:</p>
+        <input type="text" id="datepicker" placeholder="Click to select date">
+    </section>
+    
+    <hr>
+
+    <section id="task-b">
+        <h2>Task B: Smooth Scroll</h2>
+        <nav class="smooth-scroll-nav">
+            <a href="#section-1">Section 1</a> |
+            <a href="#section-2">Section 2</a> |
+            <a href="#section-end">End of Page</a>
+        </nav>
+    </section>
+
+    <div style="height: 600px;" id="section-1" class="scroll-block">
+        <h3>Section 1 (jQuery/Vanilla)</h3>
+        <p>Large block to enable scrolling.</p>
+    </div>
+    <div style="height: 600px;" class="scroll-block">
+        <p>Intermediate Content</p>
+    </div>
+    <div style="height: 600px;" id="section-2" class="scroll-block">
+        <h3>Section 2</h3>
+        <p>Another large block.</p>
+    </div>
+    <div style="height: 600px;" class="scroll-block">
+        <p>Intermediate Content</p>
+    </div>
+    <div style="height: 100px;" id="section-end" class="scroll-block">
+        <h3>End of Page Anchor</h3>
+        <p>The finish line</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
